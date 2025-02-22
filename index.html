@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinaryFX Links</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid #00ffff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        }
+        .profile {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+        }
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 2px solid #00ffff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+        }
+        .link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 255, 255, 0.3);
+            transition: left 0.3s;
+        }
+        .link:hover::before {
+            left: 100%;
+        }
+        .link:hover {
+            background: #00ffff;
+            transform: scale(1.1);
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+        </div>
+        <h1>BinaryFX Links</h1>
+        <a href="#" class="link"><i class="fas fa-download"></i> Download Deriv DBot</a>
+        <a href="#" class="link"><i class="fas fa-chart-line"></i> Trading Platform</a>
+        <a href="#" class="link"><i class="fab fa-whatsapp"></i> WhatsApp Channel</a>
+        <a href="#" class="link"><i class="fab fa-telegram"></i> Telegram Channel</a>
+        <a href="#" class="link"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#" class="link"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+</body>
+</html>
