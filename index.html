@@ -60,6 +60,17 @@
             object-fit: cover;
         }
         
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            border-bottom: 2px solid rgba(0, 255, 255, 0.6);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
         .link {
             display: flex;
             align-items: center;
@@ -79,27 +90,6 @@
             box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
             width: 100%;
             max-width: 320px;
-        }
-        
-        .link::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 255, 255, 0.4);
-            transition: left 0.4s;
-        }
-        
-        .link:hover::before {
-            left: 100%;
-        }
-        
-        .link:hover {
-            background: rgba(0, 255, 255, 0.5);
-            transform: scale(1.08);
-            box-shadow: 0 0 30px rgba(0, 255, 255, 1);
         }
         
         .download-icon {
@@ -128,13 +118,17 @@
             <img src="profile.jpg" alt="Profile Picture">
         </div>
         <h1>BinaryFX Links</h1>
+        
+        <div class="section-title">Trading Tools</div>
         <a href="Deriv Bot.apk" download class="link">
             <img src="deriv-logo.png" alt="Download Icon" class="download-icon"> Download Deriv DBot
         </a>
         <a href="https://binaryfx.site" class="link"><i class="fas fa-laptop-code"></i> Binaryfx platform</a>
+        <a href="https://binaryfx.site/onboarding" class="link"><i class="fas fa-school"></i> Academy</a>
+        
+        <div class="section-title">Socials</div>
         <a href="https://whatsapp.com/channel/0029VakGw1jIyPtLF9ZMm239" class="link"><i class="fab fa-whatsapp"></i> WhatsApp Channel</a>
         <a href="https://t.me/binaryfx_site" class="link"><i class="fab fa-telegram-plane"></i> Telegram Channel</a>
-        <a href="https://binaryfx.site/onboarding" class="link"><i class="fas fa-school"></i> Academy</a>
         <a href="https://www.instagram.com/binary_blueprint?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="link"><i class="fab fa-instagram"></i> Instagram</a>
     </div>
     <div class="copyright">© 2025 AgileHub. All Rights Reserved.</div>
