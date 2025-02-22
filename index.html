@@ -7,19 +7,25 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background-color: #0d0d0d;
+            background: radial-gradient(circle at top, #0f172a, #0d0d0d);
             color: #fff;
             font-family: 'Poppins', sans-serif;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             overflow: hidden;
         }
         .container {
-            max-width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            border: 2px solid #00ffff;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+            border: 2px solid rgba(0, 255, 255, 0.4);
+            max-width: 400px;
+            width: 90%;
         }
         .profile {
             width: 120px;
@@ -27,31 +33,31 @@
             border-radius: 50%;
             margin: 0 auto 20px;
             overflow: hidden;
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+            border: 3px solid #00ffff;
         }
         .profile img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 50%;
         }
         .link {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 255, 255, 0.2);
             color: #fff;
             padding: 15px;
             margin: 10px 0;
             border-radius: 10px;
-            border: 2px solid #00ffff;
+            border: 2px solid rgba(0, 255, 255, 0.5);
             text-decoration: none;
             font-size: 18px;
             transition: all 0.3s ease-in-out;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
         }
         .link::before {
             content: '';
@@ -60,17 +66,21 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: rgba(0, 255, 255, 0.3);
+            background: rgba(0, 255, 255, 0.4);
             transition: left 0.3s;
         }
         .link:hover::before {
             left: 100%;
         }
         .link:hover {
-            background: #00ffff;
-            transform: scale(1.1);
-            color: #000;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.9);
+            background: rgba(0, 255, 255, 0.5);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 1);
+        }
+        h1 {
+            text-transform: uppercase;
+            font-size: 24px;
+            letter-spacing: 2px;
         }
     </style>
 </head>
